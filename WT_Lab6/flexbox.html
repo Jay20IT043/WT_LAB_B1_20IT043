@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .main {
+            width: calc(100%-10px);
+            height: 250px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px inset black;
+            padding: 10px;
+            gap: 10px;
+        }
+        .a1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 80%;
+            background-color:rgb(102, 226, 226);
+            border: 1px inset rebeccapurple ;
+            transform: translate(0%,0%);
+            transition: all 0.5s linear;
+        }
+        .a1:hover{
+            transform: translate(10%,10%);
+        }
+        .c1:hover{
+            transform: translate(-10%,-10%);
+        }
+        .d1:hover{
+            transform: skew(15deg);
+        }
+        .e1:hover{
+            transform: scale(1.2);
+        }
+        .f1:hover{
+            transform: translate(-25%,25%);
+        }
+        .a1,.b1,.c1,.d1,.e1,.f1{
+            transform: translate(0%,0%);
+        }
+
+        .b1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 80%;
+            background-color:rgb(170, 94, 145);
+            border: 1px inset rebeccapurple ;
+            transform: translate(0%,0%);
+            transition: all 0.5s linear;
+
+
+        }
+        .b1:hover{
+            transform: rotate(170deg);
+
+        }
+        .c1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 80%;
+            background-color:lime;
+            border: 1px inset rebeccapurple ;
+             transition: all 0.5s linear;
+
+        }
+        .d1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 80%;
+            background-color:rgb(214, 163, 171);
+            border: 1px inset rebeccapurple ;
+             transition: all 0.5s linear;
+
+        }
+
+        .e1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 80%;
+            background-color:rgb(156, 216, 224);
+            border: 1px inset rebeccapurple ;
+             transition: all 0.5s linear;
+
+        }
+        .f1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 80%;
+            background-color:rgb(135, 187, 67);
+            border: 1px inset rebeccapurple ;
+             transition: all 0.5s linear;
+
+        }
+     
+        @media(max-width:991px) {
+            .main{
+                width: calc(100%-10px);
+                height: 300px;
+                flex-wrap: wrap;
+                
+            }
+            .a1,.b1,.c1,.d1,.e1,.f1{
+                height: 40%;
+                width: 25%;
+            }
+        }
+        @media(max-width:600px) {
+            .main{
+                width: calc(100%-10px);
+                height: 550px;
+                
+            }
+            .a1,.b1,.c1,.d1,.e1,.f1{
+                height: 30%;
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="a1">
+        A
+    </div>
+    <div class="b1">
+        B
+    </div>
+    <div class="c1">
+        C
+    </div>
+    <div class="d1">
+        D
+    </div>
+    <div class="e1">
+        E
+    </div>
+    <div class="f1">
+        F
+    </div>
+</div>
+</body>
+</html> 

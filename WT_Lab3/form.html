@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main_heading">Payment Form</h1>
+            <p>Required fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name :* <input type="text" name="name" placeholder="ABC PATEL" required></p>
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>
+                Male<input type="radio" name="gender" id="male" required>
+                Female<input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Address* : <textarea placeholder="Enter Your Address" name="address" id="address" cols="100" rows="8" required></textarea></p>
+        <p>Pincode* : <input placeholder="123456" type="number" name="pincode" id="pincode" required></p>
+        <p>Email* : <input placeholder="xyz@gmail.com" type="email" name="email" id="email" required></p>
+        <h2>Payment Information</h2>
+        <p>Card Type* : 
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="rupay">Rupay</option>
+                <option value="americanexpress">AmericanExpress</option>
+            </select>
+        </p>
+        <p>
+            Card Number* <input placeholder="1111-2222-3333-4444" type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration Date*: <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>CVV*: <input placeholder="123" type="password" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Pay Now">
+    </form>
+</div>
+</body>
+</html>
